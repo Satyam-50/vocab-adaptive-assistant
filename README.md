@@ -55,6 +55,24 @@ python scripts/train_all.py
 
 This command preprocesses data, trains the level classifier, and saves model artifacts. In fast mode, the trainer uses a faster SGD-based path and capped train sampling for large corpora.
 
+**For full training setup with large file support, see [models/training/README.md](models/training/README.md)**
+
+### Large PDF Support (Updated January 2025)
+
+The platform now supports analyzing **large PDF files** with the following limits:
+- **Maximum file size**: 200 MB
+- **Maximum pages**: 400 pages
+- **Maximum extracted text**: 500,000 characters
+
+Configure via environment variables:
+```powershell
+$env:PDF_MAX_SIZE_MB="200"
+$env:PDF_MAX_PAGES="400"
+$env:PDF_MAX_CHARS="500000"
+```
+
+Models have been retrained to handle these larger documents efficiently.
+
 ## Docker
 
 ```bash

@@ -79,7 +79,6 @@ def train_level_classifier(data_path: Path | None = None, fast_mode: bool = Fals
 		)
 		classifier = LogisticRegression(
 			max_iter=2000,
-			multi_class="multinomial",
 			random_state=config.random_state,
 			C=2.0,
 			solver="saga",

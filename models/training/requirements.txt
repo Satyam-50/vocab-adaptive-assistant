@@ -1,0 +1,20 @@
+# Training and model development dependencies
+# Install alongside backend/requirements.txt for full model training capability
+# pip install -r models/training/requirements.txt
+
+# Data processing and feature engineering
+pandas>=2.0,<3.0
+
+# Deep learning frameworks
+torch>=2.0,<3.0
+
+# Image processing for OCR support (future handwritten PDF support)
+pillow>=10.0,<12.0
+pytesseract>=0.3.10,<1.0
+
+# NLP and tokenization
+nltk>=3.8,<4.0
+
+# Optional: More efficient inference
+onnx>=1.15,<2.0
+onnxruntime>=1.17,<2.0
