@@ -1,0 +1,19 @@
+app:
+	name: Vocabulary Level Adaptive Reading Assistant
+	version: 1.0.0
+	debug: true
+
+api:
+	host: 0.0.0.0
+	port: 8000
+
+model:
+	classifier_path: models/saved_models/level_classifier.pkl
+	vectorizer_path: models/saved_models/vectorizer.pkl
+	simplifier_path: models/saved_models/simplifier_model.pt
+
+training:
+	random_state: 42
+	test_size: 0.2
+	max_tfidf_features: 15000
+
