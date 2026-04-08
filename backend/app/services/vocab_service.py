@@ -585,4 +585,8 @@ class VocabularyService:
 				if synonyms:
 					replacement_map[word] = synonyms[0]
 		return replacement_map
+	
+	def replacement_map(self) -> dict[str, str]:
+		"""Backward compatibility wrapper for get_replacement_map()."""
+		return self.get_replacement_map()
 
